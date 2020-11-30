@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCAF654825756CF8007191EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CCAF654725756CF8007191EE /* SnapKit */; };
 		CCC76BD0257565A2000D8764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76BCF257565A2000D8764 /* AppDelegate.swift */; };
 		CCC76BD2257565A2000D8764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76BD1257565A2000D8764 /* SceneDelegate.swift */; };
 		CCC76BD4257565A2000D8764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76BD3257565A2000D8764 /* ViewController.swift */; };
-		CCC76BD7257565A2000D8764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC76BD5257565A2000D8764 /* Main.storyboard */; };
 		CCC76BD9257565A3000D8764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC76BD8257565A3000D8764 /* Assets.xcassets */; };
 		CCC76BDC257565A3000D8764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC76BDA257565A3000D8764 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,6 @@
 		CCC76BCF257565A2000D8764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC76BD1257565A2000D8764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CCC76BD3257565A2000D8764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCC76BD6257565A2000D8764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC76BD8257565A3000D8764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC76BDB257565A3000D8764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC76BDD257565A3000D8764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCAF654825756CF8007191EE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +59,19 @@
 				CCC76BCF257565A2000D8764 /* AppDelegate.swift */,
 				CCC76BD1257565A2000D8764 /* SceneDelegate.swift */,
 				CCC76BD3257565A2000D8764 /* ViewController.swift */,
-				CCC76BD5257565A2000D8764 /* Main.storyboard */,
+				CCC76BE525756632000D8764 /* Resources */,
+			);
+			path = ProgrammaticLayout;
+			sourceTree = "<group>";
+		};
+		CCC76BE525756632000D8764 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				CCC76BD8257565A3000D8764 /* Assets.xcassets */,
 				CCC76BDA257565A3000D8764 /* LaunchScreen.storyboard */,
 				CCC76BDD257565A3000D8764 /* Info.plist */,
 			);
-			path = ProgrammaticLayout;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = ProgrammaticLayout;
+			packageProductDependencies = (
+				CCAF654725756CF8007191EE /* SnapKit */,
+			);
 			productName = ProgrammaticLayout;
 			productReference = CCC76BCC257565A2000D8764 /* ProgrammaticLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -95,6 +105,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "Rodion Artyukhin";
 				TargetAttributes = {
 					CCC76BCB257565A2000D8764 = {
 						CreatedOnToolsVersion = 12.1;
@@ -110,6 +121,9 @@
 				Base,
 			);
 			mainGroup = CCC76BC3257565A2000D8764;
+			packageReferences = (
+				CCAF654625756CF8007191EE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CCC76BCD257565A2000D8764 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +140,6 @@
 			files = (
 				CCC76BDC257565A3000D8764 /* LaunchScreen.storyboard in Resources */,
 				CCC76BD9257565A3000D8764 /* Assets.xcassets in Resources */,
-				CCC76BD7257565A2000D8764 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCC76BD5257565A2000D8764 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCC76BD6257565A2000D8764 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCC76BDA257565A3000D8764 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JY7W272GQ;
-				INFOPLIST_FILE = ProgrammaticLayout/Info.plist;
+				INFOPLIST_FILE = ProgrammaticLayout/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JY7W272GQ;
-				INFOPLIST_FILE = ProgrammaticLayout/Info.plist;
+				INFOPLIST_FILE = ProgrammaticLayout/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCAF654625756CF8007191EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCAF654725756CF8007191EE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCAF654625756CF8007191EE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCC76BC4257565A2000D8764 /* Project object */;
 }
