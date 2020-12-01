@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC94018A25763C20007C8044 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94018925763C20007C8044 /* UIColorExtension.swift */; };
+		CC94018D257647ED007C8044 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94018C257647ED007C8044 /* Font.swift */; };
+		CC94019025764828007C8044 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94018F25764828007C8044 /* CGFloatExtension.swift */; };
 		CCA77E0025763777006F9D73 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA77DFF25763777006F9D73 /* ArrayExtension.swift */; };
 		CCAF654825756CF8007191EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CCAF654725756CF8007191EE /* SnapKit */; };
 		CCAF654D25757025007191EE /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF654C25757025007191EE /* IntExtension.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		CC94018925763C20007C8044 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CC94018C257647ED007C8044 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		CC94018F25764828007C8044 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		CCA77DFF25763777006F9D73 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		CCAF654C25757025007191EE /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		CCAF655125757052007191EE /* AdaptiveLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutHelper.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 				CCAF654C25757025007191EE /* IntExtension.swift */,
 				CCA77DFF25763777006F9D73 /* ArrayExtension.swift */,
 				CC94018925763C20007C8044 /* UIColorExtension.swift */,
+				CC94018F25764828007C8044 /* CGFloatExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 			children = (
 				CCAF6557257570B0007191EE /* Dimension.swift */,
 				CCAF655A257570CA007191EE /* Device.swift */,
+				CC94018C257647ED007C8044 /* Font.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			files = (
 				CCC76BD4257565A2000D8764 /* ViewController.swift in Sources */,
 				CCAF654D25757025007191EE /* IntExtension.swift in Sources */,
+				CC94018D257647ED007C8044 /* Font.swift in Sources */,
 				CCAF6558257570B0007191EE /* Dimension.swift in Sources */,
 				CCA77E0025763777006F9D73 /* ArrayExtension.swift in Sources */,
 				CCC76BD0257565A2000D8764 /* AppDelegate.swift in Sources */,
@@ -209,6 +216,7 @@
 				CCC76BD2257565A2000D8764 /* SceneDelegate.swift in Sources */,
 				CCAF655B257570CA007191EE /* Device.swift in Sources */,
 				CCAF655225757052007191EE /* AdaptiveLayoutHelper.swift in Sources */,
+				CC94019025764828007C8044 /* CGFloatExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
