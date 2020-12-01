@@ -12,6 +12,8 @@ import SnapKit
 class ViewController: UIViewController {
     
     // MARK: - Views
+    lazy var album     = UILabel()
+    lazy var track     = UILabel()
     lazy var cover     = UIView()
     lazy var timeScale = UIView()
     lazy var play      = UIView()
@@ -30,6 +32,8 @@ class ViewController: UIViewController {
 // MARK: - Setup views
 private extension ViewController {
     func addSubviews() {
+        view.addSubview(album)
+        view.addSubview(track)
         view.addSubview(cover)
         view.addSubview(timeScale)
         view.addSubview(play)
@@ -39,6 +43,8 @@ private extension ViewController {
     
     func setupViews() {
         setupView()
+        setupAlbumLabel()
+        setupTrackLabel()
         setupCoverView()
         setupTiemScaleView()
         setupPlayView()
@@ -48,6 +54,18 @@ private extension ViewController {
     
     func setupView() {
         view.backgroundColor = .white
+    }
+    
+    func setupAlbumLabel() {
+        album.text = "Toxicity"
+        album.font = HelveticaNeue.medium(size: 24)
+        album.textColor = .black
+    }
+    
+    func setupTrackLabel() {
+        track.text = "Chop Suey!"
+        track.font = HelveticaNeue.medium(size: 19)
+        track.textColor = .darkGray
     }
     
     func setupCoverView() {
@@ -78,6 +96,8 @@ private extension ViewController {
 // MARK: - Setup constraints
 private extension ViewController {
     func setupConstraints() {
+        setupAlbumConstraints()
+        setupTrackConstraints()
         setupCoverConstraints()
         setupTimeScaleConstraints()
         setupPlayConstraints()
@@ -85,9 +105,23 @@ private extension ViewController {
         setupForwardConstraints()
     }
     
+    func setupAlbumConstraints() {
+        album.snp.makeConstraints { (make) in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(30.VAdapted)
+            make.left.equalTo(timeScale.snp.left)
+        }
+    }
+    
+    func setupTrackConstraints() {
+        track.snp.makeConstraints { (make) in
+            make.top.equalTo(album.snp.bottom).offset(1.VAdapted)
+            make.left.equalTo(timeScale.snp.left)
+        }
+    }
+    
     func setupCoverConstraints() {
         cover.snp.makeConstraints { (make) in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(104.VAdapted)
+            make.top.equalTo(track.snp.bottom).offset(50.VAdapted)
             make.centerX.equalTo(view)
             make.size.equalTo([250, 250].HResized)
         }

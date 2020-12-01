@@ -16,4 +16,8 @@ extension UIColor {
     static var darkGray: UIColor {
         UIColor(red: 0.43, green: 0.45, blue: 0.47, alpha: 1)
     }
+    
+    static var superDarkGray: UIColor {
+        UIColor(red: 0.27, green: 0.29, blue: 0.3, alpha: 1)
+    }
 }
