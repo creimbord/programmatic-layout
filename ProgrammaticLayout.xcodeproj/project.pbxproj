@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC94018A25763C20007C8044 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94018925763C20007C8044 /* UIColorExtension.swift */; };
 		CCA77E0025763777006F9D73 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA77DFF25763777006F9D73 /* ArrayExtension.swift */; };
 		CCAF654825756CF8007191EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CCAF654725756CF8007191EE /* SnapKit */; };
 		CCAF654D25757025007191EE /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF654C25757025007191EE /* IntExtension.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC94018925763C20007C8044 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CCA77DFF25763777006F9D73 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		CCAF654C25757025007191EE /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		CCAF655125757052007191EE /* AdaptiveLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutHelper.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				CCAF654C25757025007191EE /* IntExtension.swift */,
 				CCA77DFF25763777006F9D73 /* ArrayExtension.swift */,
+				CC94018925763C20007C8044 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				CCAF6558257570B0007191EE /* Dimension.swift in Sources */,
 				CCA77E0025763777006F9D73 /* ArrayExtension.swift in Sources */,
 				CCC76BD0257565A2000D8764 /* AppDelegate.swift in Sources */,
+				CC94018A25763C20007C8044 /* UIColorExtension.swift in Sources */,
 				CCC76BD2257565A2000D8764 /* SceneDelegate.swift in Sources */,
 				CCAF655B257570CA007191EE /* Device.swift in Sources */,
 				CCAF655225757052007191EE /* AdaptiveLayoutHelper.swift in Sources */,
